@@ -1,0 +1,205 @@
+id,langue,requete,rang,score_top1
+Q001,fr,C'est quoi l'École d'Ingénierie Digitale et d'IA de l'UEMF ?,1,0.88
+Q001,en,What is EIDIA?,1,0.856
+Q001,ar,ما هي مدرسة EIDIA؟,1,0.859
+Q002,fr,En quelle année l'EIDIA a-t-elle été créée ?,2,0.865
+Q002,en,When was EIDIA founded?,2,0.824
+Q002,ar,متى تأسست مدرسة EIDIA؟,3,0.817
+Q003,fr,Qui est le directeur de l'EIDIA ?,1,0.889
+Q003,en,Who is the director of EIDIA?,1,0.84
+Q003,ar,من هو مدير مدرسة EIDIA؟,1,0.854
+Q004,fr,L'EIDIA délivre quel type de diplôme ?,1,0.893
+Q004,en,What degrees does EIDIA award?,2,0.85
+Q004,ar,ما هي الشهادات التي تمنحها مدرسة EIDIA؟,2,0.837
+Q005,fr,Le cursus ingénieur dure combien de temps après le bac ?,1,0.882
+Q005,en,How many years does it take to become an engineer at EIDIA?,1,0.874
+Q005,ar,كم سنة يستغرق التكوين لنيل دبلوم مهندس في EIDIA؟,2,0.834
+Q006,fr,C'est quoi l'APP à l'EIDIA ?,1,0.876
+Q006,en,What teaching approach does EIDIA use?,1,0.842
+Q006,ar,ما هي المقاربة البيداغوجية المعتمدة في EIDIA؟,1,0.832
+Q007,fr,L'UEMF est-elle une université publique ou privée ?,1,0.886
+Q007,en,What kind of institution is the Euromed University of Fes?,1,0.824
+Q007,ar,ما هو الوضع القانوني للجامعة الأورومتوسطية بفاس؟,1,0.783
+Q008,fr,Quels sont les partenaires industriels de l'EIDIA ?,1,0.881
+Q008,en,Which companies does EIDIA partner with?,1,0.842
+Q008,ar,ما هي الشركات الشريكة لمدرسة EIDIA؟,2,0.825
+Q009,fr,Quelles spécialités peut-on choisir à l'EIDIA ?,,0.862
+Q009,en,What engineering majors does EIDIA offer?,4,0.852
+Q009,ar,ما هي التخصصات المتوفرة في سلك المهندسين بـ EIDIA؟,3,0.818
+Q010,fr,Que fait-on pendant les deux années de prépa à l'EIDIA ?,1,0.863
+Q010,en,What is the integrated preparatory cycle at EIDIA?,1,0.871
+Q010,ar,ما هو السلك التحضيري المندمج في EIDIA؟,1,0.829
+Q011,fr,Qu'est-ce qu'on apprend en cybersécurité à l'EIDIA ?,,0.883
+Q011,en,What does the Cyber Security major at EIDIA cover?,,0.847
+Q011,ar,ماذا يدرس الطالب في تخصص الأمن السيبراني بـ EIDIA؟,,0.844
+Q012,fr,Quels métiers après la filière IA de l'EIDIA ?,,0.848
+Q012,en,What does the AI major at EIDIA cover?,,0.841
+Q012,ar,ماذا يتضمن تخصص الذكاء الاصطناعي في EIDIA؟,5,0.842
+Q013,fr,Qu'est-ce qu'on fait en Big Data à l'EIDIA ?,3,0.864
+Q013,en,What does the Big Data Analytics major cover?,1,0.847
+Q013,ar,ماذا يتضمن تخصص تحليل البيانات الضخمة في EIDIA؟,2,0.83
+Q014,fr,"La robotique à l'EIDIA, ça mène à quoi ?",,0.87
+Q014,en,What does the Robotics and Cobotics major cover?,1,0.828
+Q014,ar,ماذا يتضمن تخصص الروبوتيك والكوبوتيك في EIDIA؟,2,0.826
+Q015,fr,Qu'apprend-on en Full Stack à l'EIDIA ?,3,0.861
+Q015,en,What does the Full Stack Engineering and Multimedia major cover?,1,0.837
+Q015,ar,ماذا يتضمن تخصص هندسة Full Stack والوسائط المتعددة؟,1,0.849
+Q016,fr,Y a-t-il des masters à l'EIDIA ?,1,0.874
+Q016,en,Which master's programmes does EIDIA offer?,1,0.859
+Q016,ar,ما هي برامج الماستر التي تقدمها EIDIA؟,3,0.811
+Q017,fr,Y a-t-il un master en cybersécurité à l'EIDIA ?,1,0.894
+Q017,en,Is there a cybersecurity master's degree at EIDIA?,1,0.881
+Q017,ar,هل يوجد ماستر في الأمن السيبراني في EIDIA؟,1,0.835
+Q018,fr,Comment intégrer le master double diplôme avec la George Washington University ?,4,0.857
+Q018,en,What are the admission requirements for the ICT Security and AI master's?,1,0.882
+Q018,ar,ما هي شروط القبول في ماستر أمن تكنولوجيا المعلومات والذكاء الاصطناعي؟,1,0.825
+Q019,fr,Le master IA générative dure combien de temps ?,1,0.881
+Q019,en,What is the Generative AI master's at EIDIA?,1,0.88
+Q019,ar,ما هو ماستر الذكاء الاصطناعي التوليدي؟,1,0.781
+Q020,fr,Les cours sont-ils en français ou en anglais ?,1,0.84
+Q020,en,What language are classes taught in at EIDIA?,1,0.852
+Q020,ar,ما هي لغة التدريس في EIDIA؟,2,0.846
+Q021,fr,Quels sont les modules de 4e année en Big Data ?,,0.868
+Q021,en,Where can I find the detailed course list for a major?,1,0.802
+Q021,ar,أين أجد البرنامج المفصل لتخصص معين؟,1,0.799
+Q022,fr,Quelles sont les conditions d'accès en 1re année ?,2,0.86
+Q022,en,How can I join EIDIA after high school?,1,0.842
+Q022,ar,كيف يمكنني الالتحاق بـ EIDIA بعد البكالوريا؟,1,0.849
+Q023,fr,"J'ai un DUT ou un DEUG, puis-je entrer à l'EIDIA ?",1,0.859
+Q023,en,Can I enter the engineering cycle directly after two years of higher education?,2,0.836
+Q023,ar,هل يمكن الالتحاق مباشرة بسلك المهندسين بعد سنتين من الدراسة الجامعية؟,1,0.799
+Q024,fr,Admission parallèle en 2e année du cycle ingénieur : quelles conditions ?,2,0.857
+Q024,en,Can I join EIDIA with a bachelor's degree?,1,0.866
+Q024,ar,هل يمكن الالتحاق بـ EIDIA بشهادة الإجازة؟,2,0.844
+Q025,fr,Quelles sont les modalités d'inscription au sein de l'établissement ?,2,0.826
+Q025,en,How do I apply to UEMF?,1,0.852
+Q025,ar,كيف أقدم ترشيحي للجامعة الأورومتوسطية بفاس؟,3,0.747
+Q026,fr,Quels documents mettre dans le dossier de candidature après le bac ?,2,0.874
+Q026,en,What documents are required to apply for first year?,1,0.859
+Q026,ar,ما هي الوثائق المطلوبة للترشح للسنة الأولى؟,1,0.842
+Q027,fr,Dossier de candidature pour le master : quels documents ?,1,0.863
+Q027,en,What documents are required for advanced-standing or master's applications?,1,0.809
+Q027,ar,ما هي الوثائق المطلوبة للقبول الموازي أو للماستر؟,1,0.794
+Q028,fr,Comment remplir l'acte d'engagement ?,1,0.851
+Q028,en,What is the commitment form (acte d'engagement)?,1,0.846
+Q028,ar,ما هو عقد الالتزام في ملف الترشح؟,1,0.794
+Q029,fr,Les étudiants internationaux peuvent-ils s'inscrire à l'EIDIA ?,,0.883
+Q029,en,I'm an international student. How do I apply?,1,0.817
+Q029,ar,أنا طالب أجنبي، كيف أترشح؟,1,0.808
+Q030,fr,Quelles sont les dates de candidature pour l'an prochain ?,2,0.828
+Q030,en,When is the EIDIA entrance exam?,1,0.838
+Q030,ar,متى تجرى مباراة الولوج إلى EIDIA؟,1,0.781
+Q031,fr,Faut-il payer pour passer le concours ?,1,0.868
+Q031,en,Is there an entrance exam fee?,1,0.805
+Q031,ar,كم تبلغ رسوم المباراة؟,1,0.748
+Q032,fr,Frais de scolarité en 1re année à l'EIDIA ?,2,0.882
+Q032,en,How much is tuition for the preparatory years at EIDIA?,1,0.856
+Q032,ar,كم تبلغ رسوم الدراسة في السنوات التحضيرية بـ EIDIA؟,1,0.85
+Q033,fr,"Frais de scolarité en 3e, 4e ou 5e année ?",4,0.842
+Q033,en,How much is tuition for the engineering cycle?,1,0.836
+Q033,ar,كم تبلغ رسوم الدراسة في سلك المهندسين؟,1,0.771
+Q034,fr,Frais de scolarité du master IA générative ?,4,0.866
+Q034,en,How much is tuition for a master's at EIDIA?,1,0.862
+Q034,ar,كم تبلغ رسوم الماستر في EIDIA؟,1,0.832
+Q035,fr,La filière cybersécurité coûte-t-elle plus cher que la filière IA ?,2,0.839
+Q035,en,Does tuition differ by major?,,0.774
+Q035,ar,هل تختلف الرسوم حسب التخصص؟,2,0.788
+Q036,fr,Réduction pour paiement anticipé ?,2,0.834
+Q036,en,Is there a discount for paying the full year upfront?,1,0.816
+Q036,ar,هل يوجد تخفيض عند أداء رسوم السنة كاملة دفعة واحدة؟,1,0.814
+Q037,fr,"Mon frère est aussi à l'UEMF, ai-je droit à une réduction ?",1,0.848
+Q037,en,Are there sibling discounts or other reductions?,1,0.784
+Q037,ar,هل توجد تخفيضات للإخوة أو حالات أخرى؟,1,0.801
+Q038,fr,Les anciens étudiants paient-ils la même chose ?,1,0.841
+Q038,en,I'm a returning student. What will my fees be?,1,0.823
+Q038,ar,أنا طالب مسجل سابقا، كم ستكون رسوم إعادة التسجيل؟,1,0.823
+Q039,fr,Quels sont les moyens de paiement des frais de scolarité ?,1,0.865
+Q039,en,Where and how can I pay my tuition?,1,0.842
+Q039,ar,أين وكيف يمكنني أداء رسوم الدراسة؟,1,0.805
+Q040,fr,Combien coûtent l'assurance et le complexe sportif ?,1,0.827
+Q040,en,Are there extra fees besides tuition?,1,0.815
+Q040,ar,هل توجد رسوم إضافية غير رسوم الدراسة؟,2,0.802
+Q041,fr,Pénalités de retard de paiement ?,1,0.858
+Q041,en,What happens if I pay late?,1,0.839
+Q041,ar,ماذا يحدث إذا تأخرت في الأداء؟,1,0.803
+Q042,fr,Désistement : quels frais reste-t-il à payer ?,2,0.832
+Q042,en,Can I get a refund if I withdraw?,1,0.812
+Q042,ar,هل يمكن استرجاع الرسوم في حالة الانسحاب؟,1,0.799
+Q043,fr,Comment obtenir une bourse à l'UEMF ?,2,0.893
+Q043,en,What scholarships does UEMF offer?,1,0.83
+Q043,ar,ما هي المنح التي تقدمها الجامعة الأورومتوسطية بفاس؟,2,0.767
+Q044,fr,Méthode pour obtenir des bourses pour les anciens étudiants de l'UEMF,1,0.867
+Q044,en,Can current students apply for a scholarship?,1,0.78
+Q044,ar,كيف يحصل طالب مسجل بالفعل على منحة؟,,0.797
+Q045,fr,Peut-on financer ses études par un crédit ?,1,0.861
+Q045,en,Is there a student loan?,1,0.829
+Q045,ar,هل يوجد قرض للطلبة؟,1,0.829
+Q046,fr,Comment voir mon planning de la semaine ?,1,0.865
+Q046,en,Where can I see my timetable?,1,0.837
+Q046,ar,أين يمكنني الاطلاع على جدول حصصي؟,1,0.789
+Q047,fr,Quand commencent les examens ?,1,0.844
+Q047,en,When are the first-semester exams?,1,0.822
+Q047,ar,متى تجرى امتحانات الدورة الأولى؟,1,0.753
+Q048,fr,Quand sont les vacances et les jours fériés ?,1,0.831
+Q048,en,What are the public holidays in 2026-2027?,1,0.825
+Q048,ar,ما هي أيام العطل الرسمية خلال السنة الجامعية 2026-2027؟,1,0.821
+Q050,fr,Quelles mobilités internationales à l'EIDIA ?,1,0.888
+Q050,en,Can EIDIA students study abroad?,1,0.867
+Q050,ar,هل يمكن لطلبة EIDIA الدراسة في الخارج خلال تكوينهم؟,1,0.848
+Q051,fr,Comment être sélectionné pour un échange ?,1,0.817
+Q051,en,"What are the criteria for exchange programmes, and are there extra fees?",1,0.829
+Q051,ar,ما هي معايير برامج التبادل الجامعي وهل توجد رسوم إضافية؟,1,0.805
+Q052,fr,Double diplôme EPF : qui peut candidater ?,1,0.855
+Q052,en,What is the EPF programme for EIDIA students?,1,0.841
+Q052,ar,ما هو برنامج التبادل مع مدرسة المهندسين EPF؟,1,0.788
+Q053,fr,Comment rejoindre un club ?,4,0.812
+Q053,en,What student clubs are there at UEMF?,1,0.849
+Q053,ar,ما هي الأندية الطلابية الموجودة في الجامعة؟,2,0.749
+Q054,fr,C'est quoi SparkSec ?,1,0.852
+Q054,en,Is there a cybersecurity club?,1,0.861
+Q054,ar,هل يوجد نادٍ للأمن السيبراني؟,1,0.761
+Q055,fr,C'est quoi HI-TEC ?,1,0.87
+Q055,en,Is there a robotics club?,1,0.86
+Q055,ar,هل يوجد نادٍ للروبوتيك؟,1,0.785
+Q056,fr,Y a-t-il un complexe sportif ?,1,0.829
+Q056,en,What sports activities are available?,1,0.81
+Q056,ar,ما هي الأنشطة الرياضية المتاحة؟,1,0.804
+Q057,fr,Je cherche des informations sur les événements.,1,0.826
+Q057,en,Where can I find university events?,1,0.839
+Q057,ar,أين أجد فعاليات الجامعة؟,1,0.805
+Q058,fr,Y a-t-il une résidence étudiante ?,1,0.854
+Q058,en,Is there housing on campus?,1,0.832
+Q058,ar,هل يوجد سكن داخل الحرم الجامعي؟,1,0.804
+Q059,fr,Combien coûte l'abonnement navette ?,1,0.827
+Q059,en,Are there shuttles between campus and the city?,1,0.799
+Q059,ar,هل توجد حافلات نقل بين الحرم الجامعي والمدينة؟,1,0.78
+Q060,fr,Y a-t-il un restaurant universitaire ?,1,0.873
+Q060,en,Where can I eat on campus?,1,0.865
+Q060,ar,أين يمكنني الأكل داخل الحرم الجامعي؟,1,0.815
+Q061,fr,Quels sont les horaires de l'infirmerie ?,1,0.865
+Q061,en,Is there an infirmary on campus?,1,0.831
+Q061,ar,هل يوجد مستوصف داخل الحرم الجامعي؟,3,0.767
+Q062,fr,Comment s'inscrire à l'AMO ?,1,0.86
+Q062,en,How do I get student health insurance (AMO)?,1,0.885
+Q062,ar,كيف أستفيد من التأمين الإجباري عن المرض للطلبة؟,1,0.813
+Q063,fr,Comment trouver un stage ?,1,0.835
+Q063,en,Are internships part of the programme?,5,0.771
+Q063,ar,هل توجد تداريب خلال التكوين؟,,0.733
+Q064,fr,Quel est le numéro de téléphone de l'EIDIA ?,1,0.894
+Q064,en,How can I contact EIDIA?,1,0.872
+Q064,ar,كيف أتواصل مع مدرسة EIDIA؟,1,0.844
+Q065,fr,Numéro de la scolarité ?,1,0.846
+Q065,en,How do I reach the registrar or the admissions office?,1,0.824
+Q065,ar,كيف أتصل بمصلحة الشؤون الدراسية أو مصلحة القبول؟,1,0.821
+Q066,fr,Quelle est l'adresse de l'UEMF ?,,0.87
+Q066,en,Where is the Euromed University of Fes located?,1,0.844
+Q066,ar,أين توجد الجامعة الأورومتوسطية بفاس؟,2,0.765
+Q067,fr,Qui est en charge du cycle préparatoire ?,3,0.851
+Q067,en,Who are the programme coordinators at EIDIA?,2,0.821
+Q067,ar,من هم منسقو التخصصات في EIDIA؟,2,0.82
+Q068,fr,Existe-t-il un portail parents ?,1,0.847
+Q068,en,Can my parents follow my academic progress?,1,0.831
+Q068,ar,هل يمكن لوالديّ متابعة مساري الدراسي؟,1,0.793
+Q072,fr,"Je ne sais pas quelle filière choisir, que faire ?",1,0.842
+Q072,en,Is there an orientation test to choose my major?,1,0.827
+Q072,ar,هل يوجد اختبار توجيه لاختيار التخصص؟,1,0.828
