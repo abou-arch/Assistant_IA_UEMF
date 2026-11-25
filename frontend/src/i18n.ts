@@ -1,9 +1,89 @@
 import type { Langue } from "./api";
 
-const textes = {
-  fr: {
+// Contenu tiré de base_QR_EIDIA.jsonl (fiches Q001-Q057) et de la page officielle de l'EIDIA.
+const fr = {
+  nav: { formations: "Formations", parcours: "Parcours", campus: "Vie de campus", faq: "FAQ", candidater: "Candidater" },
+  hero: {
+    surtitre: "Université Euromed de Fès · Pôle Ingénierie et Architecture",
+    titre1: "Ingénieurs du numérique.",
+    titre2: "Bâtisseurs de l'IA.",
+    texte:
+      "L'École d'Ingénierie Digitale et d'Intelligence Artificielle forme des ingénieurs et des diplômés de master en informatique, science des données, robotique et technologies émergentes.",
+    cta1: "Découvrir les formations",
+    cta2: "Poser une question",
+    defiler: "Défiler pour explorer",
+  },
+  bandeau: "Ils recrutent et collaborent avec l'EIDIA",
+  formations: {
+    surtitre: "Formations",
+    titre: "Une école, trois niveaux.",
+    texte: "Du cycle préparatoire au master, un parcours pensé pour l'industrie du numérique.",
+    demander: "Demander à l'assistant",
+    prepa: { titre: "Cycle préparatoire intégré", duree: "2 ans", texte: "Les bases scientifiques et technologiques : informatique, électronique, mathématiques appliquées." },
+    ingenieur: { titre: "Cycle ingénieur", duree: "3 ans · Ingénieur d'État", texte: "Cinq filières de spécialisation, des projets du concept au prototype et des stages en entreprise." },
+    master: { titre: "Masters", duree: "2 ans", texte: "Master Intelligence Artificielle Générative et Master ICT Security and AI (double diplôme)." },
+    filieresTitre: "Les cinq filières ingénieur",
+    filieres: [
+      { nom: "Computer Science & Cyber Security", resume: "Cryptographie, sécurité des réseaux, architectures sécurisées." },
+      { nom: "Intelligence Artificielle", resume: "Apprentissage automatique, réseaux de neurones, NLP, vision." },
+      { nom: "Big Data Analytics", resume: "Hadoop, Spark, Python, R et tableaux de bord décisionnels." },
+      { nom: "Robotics & Cobotics", resume: "Robots autonomes, capteurs, commande numérique." },
+      { nom: "Full Stack Engineering & Multimedia", resume: "Web, mobile, cloud et multimédia." },
+    ],
+    questionFiliere: "Que contient la filière",
+    questionNiveau: "Parlez-moi du",
+  },
+  parcours: {
+    surtitre: "Parcours",
+    titre: "Ingénieur en cinq ans après le bac.",
+    etapes: [
+      { titre: "Baccalauréat scientifique", texte: "Candidature en ligne et sélection par concours." },
+      { titre: "Cycle préparatoire intégré", texte: "Deux années de fondamentaux scientifiques et numériques." },
+      { titre: "Cycle ingénieur", texte: "Trois années dans l'une des cinq filières." },
+      { titre: "Diplôme d'Ingénieur d'État", texte: "Puis l'entreprise, la recherche ou un master." },
+    ],
+  },
+  assistant: {
+    surtitre: "Assistant IA",
+    titre: "Une question ? Réponse sourcée, en quelques secondes.",
+    texte:
+      "Notre assistant répond en français, anglais et arabe à partir des informations officielles de l'UEMF, et vous oriente vers le bon service quand il le faut.",
+    points: ["Chaque réponse cite ses sources officielles", "Oriente vers le bon service", "Disponible à toute heure"],
+    cta: "Essayer l'assistant",
+    demoQuestion: "Combien de temps pour devenir ingénieur ?",
+    demoReponse: "Cinq ans après le baccalauréat : 2 années de cycle préparatoire intégré, puis 3 années de cycle ingénieur dans l'une des filières.",
+    demoSource: "Page de l'école EIDIA",
+  },
+  campus: {
+    surtitre: "Vie de campus",
+    titre: "Apprendre en construisant.",
+    cartes: [
+      { titre: "Pédagogie par projets", texte: "De l'idée au prototype : hackathons, développement agile, défis internationaux en IA." },
+      { titre: "Mobilité internationale", texte: "Des séjours de 6 à 18 mois dans des écoles et universités partenaires." },
+      { titre: "Clubs étudiants", texte: "Robotique avec HI-TEC, cybersécurité avec SparkSec, et bien d'autres." },
+    ],
+  },
+  chiffres: [
+    { valeur: "2019", libelle: "Création de l'école" },
+    { valeur: "5", libelle: "Filières ingénieur" },
+    { valeur: "6–18", libelle: "Mois de mobilité possibles" },
+    { valeur: "43", libelle: "Pays de l'Union pour la Méditerranée" },
+  ],
+  faq: { surtitre: "FAQ", titre: "Les questions qu'on nous pose le plus.", texte: "Touchez une question : l'assistant y répond aussitôt." },
+  final: { titre: "Votre avenir dans le numérique commence ici.", candidater: "Déposer ma candidature", question: "Parler à l'assistant" },
+  pied: {
+    adresse: "Université Euromed de Fès — Route Nationale Fès-Meknès",
+    site: "Site officiel",
+    contact: "Contact",
+    mention: "Prototype étudiant — informations à confirmer auprès des services de l'UEMF.",
+  },
+  chat: {
     titre: "Assistant EIDIA",
-    sousTitre: "Posez vos questions sur l'EIDIA : formations, admission, frais, vie étudiante…",
+    statut: "Répond en FR · EN · AR",
+    ouvrir: "Ouvrir l'assistant",
+    fermer: "Fermer l'assistant",
+    bulleInvitation: "Une question sur l'EIDIA ?",
+    accueil: "Bonjour ! Posez-moi vos questions sur les formations, l'admission, les frais ou la vie étudiante.",
     placeholder: "Écrivez votre question…",
     envoyer: "Envoyer",
     nouvelle: "Nouvelle conversation",
@@ -15,12 +95,95 @@ const textes = {
     reflexion: "L'assistant rédige sa réponse…",
     erreur: "La réponse n'a pas pu être obtenue.",
     reessayer: "Réessayer",
-    avertissement:
-      "Réponses générées par IA à partir des informations publiées par l'UEMF. Vérifiez les informations importantes. Ne saisissez pas de données personnelles.",
+    avertissement: "Réponses générées par IA à partir des informations publiées par l'UEMF. Ne saisissez pas de données personnelles.",
   },
-  en: {
+};
+
+export type Textes = typeof fr;
+
+const en: Textes = {
+  nav: { formations: "Programs", parcours: "Pathway", campus: "Campus life", faq: "FAQ", candidater: "Apply" },
+  hero: {
+    surtitre: "Euromed University of Fès · Engineering & Architecture",
+    titre1: "Digital engineers.",
+    titre2: "Builders of AI.",
+    texte:
+      "The School of Digital Engineering and Artificial Intelligence trains engineers and master's graduates in computer science, data science, robotics and emerging technologies.",
+    cta1: "Explore programs",
+    cta2: "Ask a question",
+    defiler: "Scroll to explore",
+  },
+  bandeau: "They hire and partner with EIDIA",
+  formations: {
+    surtitre: "Programs",
+    titre: "One school, three levels.",
+    texte: "From the preparatory cycle to the master's degree, a path built for the digital industry.",
+    demander: "Ask the assistant",
+    prepa: { titre: "Integrated preparatory cycle", duree: "2 years", texte: "Scientific and technological foundations: computing, electronics, applied mathematics." },
+    ingenieur: { titre: "Engineering cycle", duree: "3 years · State Engineer", texte: "Five specialisations, projects from concept to prototype, and company internships." },
+    master: { titre: "Master's degrees", duree: "2 years", texte: "Master in Generative AI and Master in ICT Security and AI (double degree)." },
+    filieresTitre: "The five engineering tracks",
+    filieres: [
+      { nom: "Computer Science & Cyber Security", resume: "Cryptography, network security, secure architectures." },
+      { nom: "Artificial Intelligence", resume: "Machine learning, neural networks, NLP, computer vision." },
+      { nom: "Big Data Analytics", resume: "Hadoop, Spark, Python, R and decision dashboards." },
+      { nom: "Robotics & Cobotics", resume: "Autonomous robots, sensors, digital control." },
+      { nom: "Full Stack Engineering & Multimedia", resume: "Web, mobile, cloud and multimedia." },
+    ],
+    questionFiliere: "What does this track cover:",
+    questionNiveau: "Tell me about the",
+  },
+  parcours: {
+    surtitre: "Pathway",
+    titre: "An engineer five years after high school.",
+    etapes: [
+      { titre: "Scientific baccalaureate", texte: "Online application and competitive entrance exam." },
+      { titre: "Integrated preparatory cycle", texte: "Two years of scientific and digital foundations." },
+      { titre: "Engineering cycle", texte: "Three years in one of the five tracks." },
+      { titre: "State Engineer degree", texte: "Then industry, research or a master's degree." },
+    ],
+  },
+  assistant: {
+    surtitre: "AI assistant",
+    titre: "A question? A sourced answer in seconds.",
+    texte:
+      "Our assistant answers in French, English and Arabic from UEMF's official information, and points you to the right office when needed.",
+    points: ["Every answer cites official sources", "Points you to the right office", "Available any time"],
+    cta: "Try the assistant",
+    demoQuestion: "How long does it take to become an engineer?",
+    demoReponse: "Five years after the baccalaureate: 2 years of integrated preparatory cycle, then 3 years of engineering cycle in one of the tracks.",
+    demoSource: "EIDIA school page",
+  },
+  campus: {
+    surtitre: "Campus life",
+    titre: "Learning by building.",
+    cartes: [
+      { titre: "Project-based learning", texte: "From idea to prototype: hackathons, agile development, international AI challenges." },
+      { titre: "International mobility", texte: "Stays of 6 to 18 months at partner schools and universities." },
+      { titre: "Student clubs", texte: "Robotics with HI-TEC, cybersecurity with SparkSec, and many more." },
+    ],
+  },
+  chiffres: [
+    { valeur: "2019", libelle: "School founded" },
+    { valeur: "5", libelle: "Engineering tracks" },
+    { valeur: "6–18", libelle: "Months of possible mobility" },
+    { valeur: "43", libelle: "Union for the Mediterranean countries" },
+  ],
+  faq: { surtitre: "FAQ", titre: "The questions we hear most.", texte: "Tap a question: the assistant answers right away." },
+  final: { titre: "Your future in digital starts here.", candidater: "Apply now", question: "Talk to the assistant" },
+  pied: {
+    adresse: "Euromed University of Fès — Route Nationale Fès-Meknès",
+    site: "Official website",
+    contact: "Contact",
+    mention: "Student prototype — please confirm information with UEMF offices.",
+  },
+  chat: {
     titre: "EIDIA Assistant",
-    sousTitre: "Ask about EIDIA: programs, admission, fees, student life…",
+    statut: "Answers in FR · EN · AR",
+    ouvrir: "Open the assistant",
+    fermer: "Close the assistant",
+    bulleInvitation: "A question about EIDIA?",
+    accueil: "Hello! Ask me about programs, admission, fees or student life.",
     placeholder: "Type your question…",
     envoyer: "Send",
     nouvelle: "New conversation",
@@ -32,12 +195,92 @@ const textes = {
     reflexion: "The assistant is writing…",
     erreur: "The answer could not be retrieved.",
     reessayer: "Retry",
-    avertissement:
-      "AI-generated answers based on information published by UEMF. Check important information. Do not enter personal data.",
+    avertissement: "AI-generated answers based on information published by UEMF. Do not enter personal data.",
   },
-  ar: {
+};
+
+const ar: Textes = {
+  nav: { formations: "التكوينات", parcours: "المسار", campus: "الحياة الجامعية", faq: "أسئلة شائعة", candidater: "الترشح" },
+  hero: {
+    surtitre: "الجامعة الأورومتوسطية بفاس · قطب الهندسة والعمارة",
+    titre1: "مهندسو الرقمنة.",
+    titre2: "صناع الذكاء الاصطناعي.",
+    texte:
+      "تكوّن مدرسة الهندسة الرقمية والذكاء الاصطناعي مهندسين وحاملي ماستر في المعلوميات وعلوم البيانات والروبوتيك والتكنولوجيات الناشئة.",
+    cta1: "اكتشف التكوينات",
+    cta2: "اطرح سؤالا",
+    defiler: "مرّر للاستكشاف",
+  },
+  bandeau: "شركاء يتعاونون مع EIDIA",
+  formations: {
+    surtitre: "التكوينات",
+    titre: "مدرسة واحدة، ثلاثة مستويات.",
+    texte: "من السلك التحضيري إلى الماستر، مسار مصمم لصناعة الرقمنة.",
+    demander: "اسأل المساعد",
+    prepa: { titre: "السلك التحضيري المدمج", duree: "سنتان", texte: "الأسس العلمية والتكنولوجية: المعلوميات، الإلكترونيك، الرياضيات التطبيقية." },
+    ingenieur: { titre: "سلك المهندس", duree: "3 سنوات · مهندس دولة", texte: "خمس شعب تخصص، مشاريع من الفكرة إلى النموذج الأولي، وتداريب في المقاولات." },
+    master: { titre: "الماستر", duree: "سنتان", texte: "ماستر الذكاء الاصطناعي التوليدي وماستر أمن تكنولوجيا المعلومات والذكاء الاصطناعي (دبلوم مزدوج)." },
+    filieresTitre: "شعب الهندسة الخمس",
+    filieres: [
+      { nom: "Computer Science & Cyber Security", resume: "التشفير، أمن الشبكات، البنيات الآمنة." },
+      { nom: "الذكاء الاصطناعي", resume: "التعلم الآلي، الشبكات العصبية، معالجة اللغة، الرؤية الحاسوبية." },
+      { nom: "Big Data Analytics", resume: "Hadoop وSpark وPython وR ولوحات القيادة." },
+      { nom: "Robotics & Cobotics", resume: "الروبوتات المستقلة، المستشعرات، التحكم الرقمي." },
+      { nom: "Full Stack Engineering & Multimedia", resume: "الويب، الهاتف، السحابة والوسائط المتعددة." },
+    ],
+    questionFiliere: "ماذا تتضمن شعبة",
+    questionNiveau: "حدثني عن",
+  },
+  parcours: {
+    surtitre: "المسار",
+    titre: "مهندس بعد خمس سنوات من الباكالوريا.",
+    etapes: [
+      { titre: "باكالوريا علمية", texte: "ترشح عبر الإنترنت وانتقاء عبر مباراة." },
+      { titre: "السلك التحضيري المدمج", texte: "سنتان من الأسس العلمية والرقمية." },
+      { titre: "سلك المهندس", texte: "ثلاث سنوات في إحدى الشعب الخمس." },
+      { titre: "دبلوم مهندس دولة", texte: "ثم المقاولة أو البحث أو الماستر." },
+    ],
+  },
+  assistant: {
+    surtitre: "المساعد الذكي",
+    titre: "لديك سؤال؟ جواب موثق في ثوان.",
+    texte: "يجيب مساعدنا بالفرنسية والإنجليزية والعربية اعتمادا على المعلومات الرسمية للجامعة، ويوجهك إلى المصلحة المناسبة عند الحاجة.",
+    points: ["كل جواب يذكر مصادره الرسمية", "يوجهك إلى المصلحة المناسبة", "متاح في كل وقت"],
+    cta: "جرّب المساعد",
+    demoQuestion: "كم من الوقت لأصبح مهندسا؟",
+    demoReponse: "خمس سنوات بعد الباكالوريا: سنتان في السلك التحضيري المدمج، ثم ثلاث سنوات في سلك المهندس في إحدى الشعب.",
+    demoSource: "صفحة مدرسة EIDIA",
+  },
+  campus: {
+    surtitre: "الحياة الجامعية",
+    titre: "نتعلم بالبناء.",
+    cartes: [
+      { titre: "التعلم بالمشاريع", texte: "من الفكرة إلى النموذج الأولي: هاكاثونات، تطوير رشيق، تحديات دولية في الذكاء الاصطناعي." },
+      { titre: "الحركية الدولية", texte: "فترات من 6 إلى 18 شهرا في مدارس وجامعات شريكة." },
+      { titre: "الأندية الطلابية", texte: "الروبوتيك مع HI-TEC، الأمن السيبراني مع SparkSec، وغيرها." },
+    ],
+  },
+  chiffres: [
+    { valeur: "2019", libelle: "سنة إنشاء المدرسة" },
+    { valeur: "5", libelle: "شعب الهندسة" },
+    { valeur: "6–18", libelle: "شهرا من الحركية الممكنة" },
+    { valeur: "43", libelle: "دولة في الاتحاد من أجل المتوسط" },
+  ],
+  faq: { surtitre: "أسئلة شائعة", titre: "الأسئلة الأكثر تداولا.", texte: "اضغط على سؤال وسيجيبك المساعد فورا." },
+  final: { titre: "مستقبلك في الرقمنة يبدأ هنا.", candidater: "قدّم ترشيحك", question: "تحدث مع المساعد" },
+  pied: {
+    adresse: "الجامعة الأورومتوسطية بفاس — الطريق الوطنية فاس-مكناس",
+    site: "الموقع الرسمي",
+    contact: "اتصل بنا",
+    mention: "نموذج طلابي أولي — يرجى تأكيد المعلومات لدى مصالح الجامعة.",
+  },
+  chat: {
     titre: "مساعد EIDIA",
-    sousTitre: "اطرح أسئلتك حول EIDIA: التكوينات، القبول، الرسوم، الحياة الطلابية…",
+    statut: "يجيب بالفرنسية · الإنجليزية · العربية",
+    ouvrir: "فتح المساعد",
+    fermer: "إغلاق المساعد",
+    bulleInvitation: "لديك سؤال حول EIDIA؟",
+    accueil: "مرحبا! اسألني عن التكوينات أو القبول أو الرسوم أو الحياة الطلابية.",
     placeholder: "اكتب سؤالك…",
     envoyer: "إرسال",
     nouvelle: "محادثة جديدة",
@@ -49,19 +292,35 @@ const textes = {
     reflexion: "المساعد يكتب الجواب…",
     erreur: "تعذر الحصول على الجواب.",
     reessayer: "إعادة المحاولة",
-    avertissement:
-      "أجوبة مولدة بالذكاء الاصطناعي اعتمادا على المعلومات المنشورة من طرف الجامعة. تحقق من المعلومات المهمة. لا تدخل معطيات شخصية.",
+    avertissement: "أجوبة مولدة بالذكاء الاصطناعي اعتمادا على المعلومات المنشورة من طرف الجامعة. لا تدخل معطيات شخصية.",
   },
-} satisfies Record<Langue, Record<string, string>>;
+};
 
-export type CleTexte = keyof (typeof textes)["fr"];
-
-export function t(langue: Langue, cle: CleTexte): string {
-  return textes[langue][cle];
-}
+export const TEXTES: Record<Langue, Textes> = { fr, en, ar };
 
 export const LANGUES: { code: Langue; libelle: string }[] = [
   { code: "fr", libelle: "FR" },
   { code: "en", libelle: "EN" },
-  { code: "ar", libelle: "العربية" },
+  { code: "ar", libelle: "ع" },
 ];
+
+export const PARTENAIRES = [
+  "Maroc Numeric Cluster",
+  "IBM Morocco",
+  "Microsoft Morocco",
+  "Siemens",
+  "SAS Morocco",
+  "HPS",
+  "ALTEN",
+  "CGEM",
+  "GIMAS",
+  "iDATE",
+  "AVENIS",
+  "BMCE Bank",
+];
+
+export const LIENS = {
+  candidature: "https://candidature.ueuromed.org",
+  site: "https://ueuromed.org/fr/etablissements/ecole-d-ingenierie-digitale-et-d-intelligence-artificielle",
+  contact: "https://www.ueuromed.org/fr/contact",
+};

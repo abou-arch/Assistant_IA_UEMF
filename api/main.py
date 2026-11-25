@@ -6,6 +6,7 @@ Lancement (à la racine du dépôt) :
 Sous-ensemble de docs/02-contrat-api.md : /api/health, /api/suggestions, /api/chat.
 L'historique des conversations est gardé en mémoire (perdu au redémarrage) : suffisant pour le prototype.
 """
+import html
 import re
 import uuid
 from datetime import datetime, timezone
@@ -114,7 +115,9 @@ def chat(req: ChatRequest):
     except Exception as exc:  # LLM injoignable, index absent…
         raise HTTPException(503, detail={"code": "llm_indisponible", "message": str(exc)[:200]}) from exc
 
-    contenu = CITATION.sub("", res.answer).strip()
+    # Les fiches sont échappées (html.escape) dans le prompt et le LLM recopie parfois « &#x27; » :
+    # on décode, le front affichant du texte brut (pas de HTML injecté).
+    contenu = html.unescape(CITATION.sub("", res.answer)).strip()
     historique += [{"role": "user", "content": req.message}, {"role": "assistant", "content": res.answer}]
 
     fiches = [FICHES[i] for i in res.fiches if i in FICHES]

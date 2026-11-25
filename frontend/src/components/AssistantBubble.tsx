@@ -1,5 +1,7 @@
 import type { ChatResponse, Langue } from "../api";
-import { t } from "../i18n";
+import { TEXTES, type Textes } from "../i18n";
+
+const t = (langue: Langue, cle: keyof Textes["chat"]) => TEXTES[langue].chat[cle];
 
 function lienContact(contact: string): string | null {
   if (contact.includes("@")) return `mailto:${contact.match(/[\w.+-]+@[\w.-]+/)?.[0] ?? contact}`;
